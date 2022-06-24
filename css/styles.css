@@ -11,6 +11,7 @@
     --list-bg: #F5F4FA;
     --about-bg: #E5E5E5 ;
     --heroes: #F5F4FA; 
+    --foot: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -18,8 +19,9 @@ body{
     font-family: var(--main-font),var(--secondary-font), sans-serif;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--main-cl);
-    
+    background-color:var(--white) ;
 }
 
 .link{
@@ -33,16 +35,11 @@ body{
 
 /* Header*/
 
-.header{
-    background-color: var(--white);
-}
-
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--accent-txt-cl);
 }
 
@@ -65,7 +62,6 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    font-weight: 500;
     color: var(--main-cl);
 }
 
@@ -73,11 +69,8 @@ body{
 .header-link:focus,
 .contact:hover,
 .contact:focus,
-.btn-list:hover,
-.btn-list:focus,
 .footer-link:hover,
-.footer-link:focus
- {
+.footer-link:focus{
     color: var(--accent-txt-cl)
 }
 
@@ -124,7 +117,7 @@ body{
 .advantage-title{
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--link-cl);
 }
@@ -140,7 +133,6 @@ body{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--link-cl);
 }
 
@@ -155,7 +147,6 @@ body{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--link-cl);
 }
 
@@ -168,7 +159,6 @@ body{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--link-cl);
 }
 
@@ -176,21 +166,28 @@ body{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 /*footer*/
 .footer{
-    color: rgba(255, 255, 255, 0.6);
     background-color: var(--dark-bg-cl);
 }
 
-.footer-accent{
+.footer-accent {
     color: var(--white);
 }
 
+
 .footer-link{
-    color: #FFFFFF;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:var(--foot);
+}
+
+.adress{
+    color:var(--white);
 }
 
 
@@ -207,11 +204,17 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
     color:var(--link-cl);
     background-color: var(--list-bg);
     cursor: pointer;
 }
+
+.btn-list:hover,
+.btn-list:focus{
+    color: var(--white);
+    background-color: var(--accent-txt-cl);
+}
+
 
 .btn-active{
     color: var(--white);
@@ -236,7 +239,6 @@ body{
 .example-text{
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
 
 
